@@ -1,0 +1,122 @@
+@import './_header.scss';
+
+#content {
+    display: flex;
+
+    div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            border-radius: 10px 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 5px 0;
+            width: 60%;
+
+        }
+        
+        p:nth-of-type(1) {
+            margin-top: 50px;
+            background-color: #D4E3F2;
+        }
+
+        p:nth-of-type(1):hover {
+            background-color: #074A8D;
+            color: white;
+            transition: 0.5s;
+        }
+
+        p:nth-of-type(2) {
+            background-color: #074A8D;
+            color: white;
+        }
+
+        p:nth-of-type(2):hover {
+            background-color: #D4E3F2;
+            color: black;
+            transition: 0.5s;
+        }
+    } 
+
+    img {
+        width: 50%;
+        z-index: -1;
+    }
+
+    div h4:nth-child(1) {
+        color: red;
+    }
+
+}
+
+@media screen and (max-width: 1800px) {
+    #content {
+        div {
+            h1 {
+                font-size: 3em;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    #content {
+        div {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    #content {
+        div {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        div {
+            width: 80%;
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #content {
+        margin-top: 50px;
+        div {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+}

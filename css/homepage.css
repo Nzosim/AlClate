@@ -1,0 +1,157 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  box-shadow: 0.1px 0.1px 30px black;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+header div {
+  display: flex;
+}
+header div img + a {
+  font-size: 25px;
+}
+header img {
+  display: none;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 20px 25px;
+}
+header #logo {
+  width: 10%;
+}
+header #nav {
+  width: 90%;
+  justify-content: flex-end;
+  opacity: 0.8;
+  align-items: end;
+}
+header #nav a:hover {
+  opacity: 1;
+  color: #074A8D;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    display: block;
+    padding: 0;
+  }
+  header img {
+    display: block;
+    width: 40px;
+  }
+  header #logo {
+    padding: 0 20px;
+  }
+  header #nav {
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+  }
+  header #nav a {
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  header #nav.open {
+    display: flex;
+  }
+}
+#content {
+  display: flex;
+}
+#content div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#content div h1 {
+  font-size: 4em;
+}
+#content div p {
+  border-radius: 10px 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 5px 0;
+  width: 60%;
+}
+#content div p:nth-of-type(1) {
+  margin-top: 50px;
+  background-color: #D4E3F2;
+}
+#content div p:nth-of-type(1):hover {
+  background-color: #074A8D;
+  color: white;
+  transition: 0.5s;
+}
+#content div p:nth-of-type(2) {
+  background-color: #074A8D;
+  color: white;
+}
+#content div p:nth-of-type(2):hover {
+  background-color: #D4E3F2;
+  color: black;
+  transition: 0.5s;
+}
+#content img {
+  width: 50%;
+  z-index: -1;
+}
+#content div h4:nth-child(1) {
+  color: red;
+}
+
+@media screen and (max-width: 1800px) {
+  #content div h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #content div h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #content div h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #content div {
+    width: 80%;
+  }
+  #content div h1 {
+    font-size: 3em;
+  }
+  #content img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #content {
+    margin-top: 50px;
+  }
+  #content div h1 {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */
