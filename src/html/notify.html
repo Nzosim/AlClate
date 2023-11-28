@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlClate</title>
+    <link rel="stylesheet" href="../css/notify.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../img/menu-burger-horizontal-svgrepo-com.svg" alt="bouton pour acceder au menu hamburger" id="hamburger">
+            <a href="./homepage.html">AlClate</a>
+        </div>
+        <div id="nav">
+            <a href="#">Notifier un retard ou une absence</a>
+            <a href="#">Statistiques</a>
+            <a href="#">Calendrier</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="gauche">
+            <h1>Combien de minutes<br>de retard Aujourd'hui ?</h1>
+            
+        </div>
+        <div id="droite">
+            <div>
+                <div>
+                    <h1>Date</h1>
+                    <input type="date" id="start" name="trip-start" min="2023-01-01" max="2024-12-31" />
+                </div>
+                <div>
+                    <h1>Période</h1>
+                    <select name="moment" id="moment-select">
+                        <option value="matin">Matin</option>
+                        <option value="apres">Après-midi</option>
+                      </select>
+                      
+                </div>
+                <div>
+                    <h1>Retard</h1>
+                    <select name="time" id="time-select">
+                    </select>
+                </div>
+                <h1 id="save">Enregistrer</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/notify.js"></script>
+</html>

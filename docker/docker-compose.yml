@@ -1,0 +1,37 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    volumes:
+      - ../src:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - alclate-network
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    env_file:
+      - ./.env
+    restart: always
+    networks:
+      - alclate-network
+    
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - alclate-network
+
+networks:
+  alclate-network:
+    driver: bridge
