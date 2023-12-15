@@ -2,7 +2,7 @@
 
 #content {
     display: flex;
-    height: 100vh;
+    height: 90vh;
 
     #gauche {
         background-color: #D4E3F2;
@@ -33,6 +33,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 50%;
+
         &>div {
             width: 70%;
             height: 70vh;
@@ -40,12 +41,24 @@
             border-top-right-radius: 25px;
             border: 25px solid #b8b8b8; 
             border-left: none;
-            background-clip: padding-box; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div {
+                padding-left: 25%;
+                padding-bottom: 10px;
+            }
         }
 
         input, select {
-            padding: 10px 30px;
+            padding: 10px;
             border-radius: 10px;
+            width: 70%;
+        }
+
+        input {
+            width: 65%;
         }
 
         #save {

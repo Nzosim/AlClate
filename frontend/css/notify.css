@@ -70,7 +70,7 @@ header #nav a:hover {
 }
 #content {
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 #content #gauche {
   background-color: #D4E3F2;
@@ -107,11 +107,21 @@ header #nav a:hover {
   border-top-right-radius: 25px;
   border: 25px solid #b8b8b8;
   border-left: none;
-  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#content #droite > div div {
+  padding-left: 25%;
+  padding-bottom: 10px;
 }
 #content #droite input, #content #droite select {
-  padding: 10px 30px;
+  padding: 10px;
   border-radius: 10px;
+  width: 70%;
+}
+#content #droite input {
+  width: 65%;
 }
 #content #droite #save {
   background-color: #074A8D;

@@ -1,2 +1,9 @@
 .env
 db_data
+node_modules
+vendor
+*.lock
+*.xml
+*.env
+package-lock.json
+*.iml
