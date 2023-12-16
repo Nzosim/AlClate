@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const sendButton = document.getElementById("save");
   sendButton.addEventListener("click", () => {
+    document.getElementById("loading-screen").style.display = "flex";
+
     const data = {
       Date: dateInput.value,
       Moment: document.getElementById("moment-select").value,
@@ -45,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
       body: JSON.stringify(data),
     })
       .then((data) => {
-        console.log("Success:", data);
-        window.alert("Merci pour votre participation !");
+        document.getElementById("loading-screen").style.display = "none";
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.log(error);
+        document.getElementById("loading-screen").style.display = "none";
       });
   });
 });
