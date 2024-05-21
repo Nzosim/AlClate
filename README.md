@@ -6,7 +6,7 @@ les retards d’un de mes amis d’une autre classe. L’idée est ensuite d’a
 Avant de commencer le développement, j’ai réfléchi au contenu du site et créé une maquette visuelle sur Figma. J’ai développé un backend en PHP qui expose une API appelée par le frontend. 
 J’ai choisi le PHP car nous l’avons énormément utilisé en cours pour développer des backends. Le frontend utilise simplement du HTML, du CSS et un peu de JavaScript.
 
-[Maquette figma}(https://www.figma.com/design/TUVwCWacgpbHkbO0qjBp1C/AlClate-website?t=NyAEillqI5erF31E-1)
+Maquette figma : https://www.figma.com/design/TUVwCWacgpbHkbO0qjBp1C/AlClate-website?t=NyAEillqI5erF31E-1
 
 ![image](https://github.com/Nzosim/AlClate/assets/76412171/89da8b72-d530-4b2e-b0f0-9a58c76247d6)
 ![image](https://github.com/Nzosim/AlClate/assets/76412171/12db80aa-a4a6-4d5d-93d6-543dd1f0037b)
