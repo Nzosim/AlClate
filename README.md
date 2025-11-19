@@ -1,7 +1,7 @@
-# AlClate est un petit projet web avec un frontend en HTML JS CSS et une backend en PHP qui permet de notifier les retards d'un de mes camarades 
+# AlClate est un petit projet web avec un frontend en HTML, JS, CSS et un backend en PHP à la demande d'un ami qui voulait connaître son nombre de retards ou absences.
 
 Je cherchais une idée de petit site web à développer pour me remettre au CSS, et c’est à ce moment-là que j’ai pensé à créer le site AlClate. AlClate permet de notifier 
-les retards d’un de mes amis d’une autre classe. L’idée est ensuite d’ajouter des statistiques pour savoir à quelle période de l’année ou de la journée cela arrive le plus souvent.
+les retards d’un ami. 
 
 Avant de commencer le développement, j’ai réfléchi au contenu du site et créé une maquette visuelle sur Figma. J’ai développé un backend en PHP qui expose une API appelée par le frontend. 
 J’ai choisi le PHP car nous l’avons énormément utilisé en cours pour développer des backends. Le frontend utilise simplement du HTML, du CSS et un peu de JavaScript.
